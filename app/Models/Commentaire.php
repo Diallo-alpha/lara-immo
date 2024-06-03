@@ -22,8 +22,4 @@ class Commentaire extends Model
             return $this->belongsTo(Bien::class);
         }
 
-    public function utilisateur()
-        {
-            return $this->belongsTo(Utilisateur::class);
-        }
 }

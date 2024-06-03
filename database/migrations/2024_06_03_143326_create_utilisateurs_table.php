@@ -18,7 +18,6 @@ $table->id();
 $table->string('nom',100);
 $table->string('email',255);
 $table->string('mot_de_passe');
-$table->enum('role', ['utilisateur', 'admin'])->default('utilisateur');
 $table->timestamps();
 });
 }

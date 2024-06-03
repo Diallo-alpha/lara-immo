@@ -13,14 +13,6 @@ class Utilisateur extends Model
         'mot_de_passe',
         'role',
     ];
-    public function biens(): HasMany
-    {
-        return $this->hasMany(Bien::class);
-    }
 
-    public function utilisateurs(): HasMany
-    {
-        return $this->hasMany(Utilisateur::class);
-    }
     use HasFactory;
 }

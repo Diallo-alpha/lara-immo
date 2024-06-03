@@ -16,7 +16,6 @@ public function up(): void
         $table->text('description');
         $table->timestamp('date_publication')->default(DB::raw('CURRENT_TIMESTAMP'));
         $table->foreignId('bien_id')->constrained()->onDelete('cascade');
-        $table->foreignId('utilisateur_id')->constrained()->onDelete('cascade');
         $table->timestamps();
     });
 }
