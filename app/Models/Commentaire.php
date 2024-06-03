@@ -13,8 +13,7 @@ class Commentaire extends Model
     protected $fillable = [
         'date_publication',
         'description',
-        'bien_id',
-        'utilisateur_id',
+        'auteur',
     ];
 
     public function bien ()
